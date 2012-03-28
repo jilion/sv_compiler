@@ -5,7 +5,7 @@
 #+AUTHOR: Mihai Bazon
 #+EMAIL: mihai.bazon@gmail.com
 
-* UglifyJS --- a JavaScript parser/compressor/beautifier
+* SV Compiler --- based on UglifyJS
 
 This package implements a general-purpose JavaScript
 parser/compressor/beautifier toolkit.  It is developed on [[http://nodejs.org/][NodeJS]], but it
