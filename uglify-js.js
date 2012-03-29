@@ -20,5 +20,5 @@ function uglify(orig_code, options){
 uglify.parser = require("./lib/parse-js");
 uglify.uglify = require("./lib/process");
 uglify.consolidator = require("./lib/consolidator");
-
+uglify.mangler = require("./lib/mangler");
 module.exports = uglify
