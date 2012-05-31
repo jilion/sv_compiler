@@ -23,5 +23,4 @@ uglify.consolidator = require("./lib/consolidator");
 
 uglify.mangler = require("./lib/mangler");
 uglify.inspector = require("./lib/inspector");
-
 module.exports = uglify
