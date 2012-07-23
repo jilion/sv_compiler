@@ -11,7 +11,12 @@ function uglify(orig_code, options){
   // orig_code = "var _ = { embed: top !== self }"
   // orig_code = "function test(fs) { var window = {}; window.isFullscreen() }"
   // orig_code = "AClass.prototype.test = function(fs) { var window = {}; window.isFullscreen() }"
+  // orig_code = "function a(_element) { return this._element._sciao }"
 
+  // orig_code = "_canvas.getContext('2d')._resize()"
+  // orig_code = 'ciao(function() { if (fd) {var gggga = 2;}})'
+  // orig_code = "ciao.test('a', [], function a() {if (window[d]) {var CANVAS_RENDERING_CONTEXT_2D = 2;}})"
+  // orig_code = 'sublime_.module("Tz", [], function() {var ADD_COLOR_STOP; if (window[a]) {ADD_COLOR_STOP=3}})'
   var ast = jsp.parse(orig_code, options.strict_semicolons); // parse code and get the initial AST
   // ast = pro.ast_logger(ast, options.sv_options); // get a new AST with logging messages stripped
   if (options.sv_options && options.sv_options.mangle) {
