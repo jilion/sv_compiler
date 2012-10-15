@@ -27,6 +27,7 @@ function uglify(orig_code, options){
   }
 
   var final_code = pro.gen_code(ast, options.gen_options); // compressed code here
+  final_code = pro.split_lines(final_code, 1000);
   return final_code;
 };
 
